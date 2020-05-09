@@ -1,8 +1,8 @@
 const router = require('express').Router();
 
-const Users = require('./users-model.js');
+const Users = require('./user-model.js');
 
-const theAuth = require('../auth/amiddleware')
+const theAuth = require('../auth/middleware')
 
 router.get('/', theAuth, (req, res) => {
     Users.find()

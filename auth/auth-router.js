@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken');
 const secrets = require('../api/secrets.js');
 const gt = require('../auth/generateToken.js')
 
-const Users = require('../users/users-model.js');
+const Users = require('../users/user-model.js');
 
 //CRUDs go here
 router.post('/register', (req, res) => {
